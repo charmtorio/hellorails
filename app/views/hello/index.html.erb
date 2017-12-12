@@ -3,3 +3,12 @@
   <input type="text" name="name" />
   <input type="submit" />
 </form>
+
+<h3>Users</h3>
+<ul>
+  <% @people.each do |person| %>
+    <li>
+      <%= person.name %>
+    </li>
+  <% end %>
+</ul>
